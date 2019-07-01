@@ -13,3 +13,6 @@ i {
     float: right;
 }
 
+.fa-github:hover {
+    color: lightgrey;
+}
