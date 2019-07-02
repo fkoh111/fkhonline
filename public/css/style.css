@@ -10,9 +10,17 @@ body {
     color: lightgrey;
 }
 
+.fa-linkedin:hover {
+    color:lightgrey;
+}
+
+.fa-paper-plane:hover {
+    color:lightgrey;
+}
+
 social {
-  margin-top: 15px;
-  margin-right: 15px;
+  margin-top: 25px;
+  margin-right: 25px;
   float: right;
   color: orange;
 }
