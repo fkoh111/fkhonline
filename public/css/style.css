@@ -34,13 +34,15 @@ a:hover {
 }
 
 .center {
+
+  background-size: cover;
+  min-height: 800px;
   position: relative;
   margin: auto;
   font-family: "Raleway";
   font-size: medium;
   color: rgb(68, 68, 68);
   width: 40%;
-  height: auto;
   padding: 10px;
 }
 

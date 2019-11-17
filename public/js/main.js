@@ -1,4 +1,4 @@
-function readHtml(divId, string) {
-    document.getElementById(divId).innerHTML = string;
+function readHtml(centerId, string) {
+    document.getElementById(centerId).innerHTML = string;
     return false;
 }
