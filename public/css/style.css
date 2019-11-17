@@ -1,30 +1,51 @@
 body {
-  background-image: linear-gradient(45deg, #ffffff 50%, #eee 50%);
-  background-size: 100% 2080px;
-  background-repeat: no-repeat;
+  background-color: rgb(236, 236, 237);
+  height: 100%;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+}
+
+a:hover {
+  text-decoration: none;
+  color: hotpink;
 }
 
 .fa-github:hover {
-  color: orange;
+  color: hotpink;
 }
 
 .fa-linkedin:hover {
-  color: orange;
+  color: hotpink;
 }
 
 .fa-paper-plane:hover {
-  color: orange;
+  color: hotpink;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  margin: auto;
+  bottom: 0;
+  height: 75px;
+  padding: 10px;
+  border-top: 1px dotted grey;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.menu {
+  font-family: "Raleway";
+  font-size: 68px;
+  color: rgb(68, 68, 68);
 }
 
 social {
-  margin-top: 25px;
-  margin-right: 25px;
-  float: right;
-  color: rgb(25, 60, 80);
-}
-
-quote {
-  font-family: "Caveat";
-  font-size: 308px;
-  color: black;
+  margin-top: 10px;
+  margin: 5px;
+  color: grey;
 }
