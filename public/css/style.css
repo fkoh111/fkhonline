@@ -14,38 +14,44 @@ a:hover {
   color: hotpink;
 }
 
-.fa-github:hover {
-  color: hotpink;
-}
-
-.fa-linkedin:hover {
-  color: hotpink;
-}
-
-.fa-paper-plane:hover {
-  color: hotpink;
-}
-
 .footer {
   position: fixed;
   left: 0;
-  margin: auto;
-  bottom: 0;
   height: 75px;
   padding: 10px;
-  border-top: 1px dotted grey;
   width: 100%;
   background-color: lightgrey;
+  border-top: 1px dotted grey;
+  bottom: 0;
 }
 
 .menu {
+  position: fixed;
   font-family: "Raleway";
   font-size: 68px;
   color: rgb(68, 68, 68);
+  overflow: hidden;
+}
+
+.center {
+  position: relative;
+  margin: auto;
+  font-family: "Raleway";
+  font-size: medium;
+  color: rgb(68, 68, 68);
+  width: 40%;
+  height: auto;
+  padding: 10px;
 }
 
 social {
   margin-top: 10px;
   margin: 5px;
   color: grey;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-paper-plane:hover {
+  color: hotpink;
 }
