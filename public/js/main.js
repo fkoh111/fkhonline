@@ -1,4 +1,4 @@
-function readHtml(divId) {
-    document.getElementById(divId).innerHTML = Date();
+function readHtml(divId, string) {
+    document.getElementById(divId).innerHTML = string;
     return false;
 }
