@@ -61,16 +61,16 @@ social {
 
 /* animations */
 
-.simple-spinner {
+.spinner {
   height: 48px;
   width: 48px;
   border: 5px solid rgba(150, 150, 150, 0.2);
   border-radius: 50%;
   border-top-color: rgb(150, 150, 150);
-  animation: rotate 1s 0s infinite ease-in-out alternate;
+  animation: rotator 1s 0s infinite ease-in-out alternate;
 }
 
-@keyframes rotate {
+@keyframes rotator {
   0%   { transform: rotate(0);      }
   100% { transform: rotate(360deg); }
 }
