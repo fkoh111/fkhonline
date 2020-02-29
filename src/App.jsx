@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/App.css";
+import "./css/index.css";
 import Splash from "./components/Splash";
 import Social from "./components/Social";
 
