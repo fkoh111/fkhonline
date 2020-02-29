@@ -18,16 +18,17 @@ body {
   padding-left: 2%;
 }
 
-.footer {
-  position: fixed;
-  bottom: 5%;
-  padding-left: 50%;
+.center {
+  position: absolute;
+  bottom: 50px;
+  left: 49%;
 }
 
 social {
   margin-top: 10px;
   margin: 5px;
   color: #93a1a1;
+  text-align: center;
 }
 
 .fa-github:hover,

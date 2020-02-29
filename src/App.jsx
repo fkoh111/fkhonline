@@ -11,7 +11,7 @@ const App = () => {
           <Splash />
         </h1>
       </div>
-      <div className="footer">
+      <div className="center">
         <Social />
       </div>
     </React.Fragment>
