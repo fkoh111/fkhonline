@@ -18,13 +18,12 @@ body {
 
 .center {
   position: absolute;
-  bottom: 75px;
+  bottom: 40px;
   width: 100%;
   text-align: center;
 }
 
 social {
-  margin-top: 10px;
   margin: 10px;
   color: #93a1a1;
   text-align: center;
