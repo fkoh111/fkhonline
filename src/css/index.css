@@ -30,8 +30,8 @@ social {
   text-align: center;
 }
 
-.fa-github:hover,
-.fa-linkedin:hover,
-.fa-paper-plane:hover {
+.fa-github-square:hover,
+.fa-linkedin-square:hover,
+.fa-envelope-square:hover {
   color: #b58900;
 }
