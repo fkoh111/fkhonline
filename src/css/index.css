@@ -14,24 +14,24 @@ body {
 .splash {
   text-align: left;
   padding-left: 2%;
+  font-size: medium;
 }
 
 .center {
   position: absolute;
-  bottom: 75px;
+  bottom: 40px;
   width: 100%;
   text-align: center;
 }
 
 social {
-  margin-top: 10px;
-  margin: 10px;
+  margin: 20px;
   color: #93a1a1;
   text-align: center;
 }
 
 .fa-github:hover,
 .fa-linkedin:hover,
-.fa-paper-plane:hover {
+.fa-envelope:hover {
   color: #b58900;
 }
