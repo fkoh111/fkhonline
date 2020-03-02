@@ -9,7 +9,7 @@ class Social extends Component {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <social className="fa fa-github fa-1x"></social>
+          <social className="fa fa-github fa-lg"></social>
         </a>
         <a
           href="https://www.linkedin.com/in/frederik-kok-hansen/"
@@ -17,14 +17,14 @@ class Social extends Component {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <social className="fa fa-linkedin fa-1x"></social>
+          <social className="fa fa-linkedin fa-lg"></social>
         </a>
         <a
           href="mailto:frederik_kok@icloud.com"
           title="Mail | Frederik Kok Hansen"
           target="_parent"
         >
-          <social className="fa fa-envelope fa-1x"></social>
+          <social className="fa fa-envelope fa-lg"></social>
         </a>
       </div>
     );
