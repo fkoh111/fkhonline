@@ -1,9 +1,10 @@
 import React from "react";
 import Navigate from "./Navigate";
 
-const Legend = () => {
+const Navbar = () => {
   return (
     <ul>
+      <Navigate item="Home" tolink="/"></Navigate>
       <Navigate item="About" tolink="/about"></Navigate>
       <Navigate item="Vitae" tolink="/vitae"></Navigate>
       <Navigate item="Contact" tolink="/contact"></Navigate>
@@ -11,4 +12,4 @@ const Legend = () => {
   );
 };
 
-export default Legend;
+export default Navbar;
