@@ -41,7 +41,6 @@ const App = () => {
           </Route>
         </div>
       </BrowserRouter>
-
       <div className="footer">
         <Social />
       </div>
