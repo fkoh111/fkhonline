@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./css/index.css";
 import Splash from "./components/Splash";
 import Social from "./components/Social";
-import Legend from "./components/Legend";
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -17,23 +17,32 @@ const App = () => {
         <h1>
           <Splash />
         </h1>
-        <BrowserRouter>
-          <Legend />
+      </div>
+      <BrowserRouter>
+        <div className="navbar">
+          <Navbar />
           <Route path="/">
             <Home />
           </Route>
           <Route path="/About">
-            <About />
+            <div className="text">
+              <About />
+            </div>
           </Route>
           <Route path="/Vitae">
-            <Vitae />
+            <div className="text">
+              <Vitae />
+            </div>
           </Route>
           <Route path="/Contact">
-            <Contact />
+            <div className="text">
+              <Contact />
+            </div>
           </Route>
-        </BrowserRouter>
-      </div>
-      <div className="center">
+        </div>
+      </BrowserRouter>
+
+      <div className="footer">
         <Social />
       </div>
     </React.Fragment>
