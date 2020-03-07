@@ -4,7 +4,14 @@ import ReactTypingEffect from "react-typing-effect";
 class Splash extends Component {
   constructor(props) {
     super(props);
-    this.state = { seconds: 0 };
+    this.state = { seconds: 0, isAnimating: true };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(state => ({
+      isAnimating: false
+    }));
   }
 
   counter() {
@@ -18,13 +25,16 @@ class Splash extends Component {
   }
 
   componentWillUnmount() {
-    clearInterval(this.interval);
+    clearInterval(this.interval, this.state.seconds);
   }
 
   render() {
     if (this.state.seconds <= 11.5) {
+      if (this.state.isAnimating === false) {
+        return <div>> frederik kok hansen_</div>;
+      }
       return (
-        <div>
+        <div onClick={this.handleClick}>
           <span>> </span>
           <ReactTypingEffect
             className="typingeffect"
@@ -35,6 +45,8 @@ class Splash extends Component {
           />
         </div>
       );
+    } else if (this.state.isAnimating === false) {
+      return <div>> frederik kok hansen_</div>;
     } else {
       return <div>> fkhonline.net_</div>;
     }
