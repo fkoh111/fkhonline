@@ -4,6 +4,7 @@ import Navigate from "./Navigate";
 const Legend = () => {
   return (
     <ul>
+      <Navigate item="Home" tolink="/"></Navigate>
       <Navigate item="About" tolink="/about"></Navigate>
       <Navigate item="Vitae" tolink="/vitae"></Navigate>
       <Navigate item="Contact" tolink="/contact"></Navigate>
