@@ -1,22 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function Nav() {
+const Nav = () => {
   return (
     <ul>
-      <Link to="/">
+      <NavLink to="/">
         <li>Home</li>
-      </Link>
-      <Link to="/About">
+      </NavLink>
+      <NavLink to="/About">
         <li>About</li>
-      </Link>
-      <Link to="/Vitae">
+      </NavLink>
+      <NavLink to="/Vitae">
         <li>Vitae</li>
-      </Link>
-      <Link to="/Contact">
+      </NavLink>
+      <NavLink to="/Contact">
         <li>Contact</li>
-      </Link>
+      </NavLink>
     </ul>
   );
-}
+};
 export default Nav;
