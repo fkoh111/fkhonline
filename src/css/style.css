@@ -8,6 +8,7 @@ body {
     sans-serif, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 120px;
 }
 
 ul {
@@ -29,6 +30,11 @@ li {
   color: #b58900;
 }
 
+.textStyle {
+  width: 70%;
+  margin: auto;
+}
+
 .splash {
   text-align: left;
   padding-left: 2%;
@@ -36,12 +42,13 @@ li {
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 40px;
-  width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
 
 social {
