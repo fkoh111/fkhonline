@@ -1,14 +1,15 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import "./css/index.css";
 import Splash from "./components/Splash";
 import Social from "./components/Social";
-import Navbar from "./components/Navbar";
+import Nav from "./components/Nav";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import Vitae from "./pages/Vitae";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -18,29 +19,15 @@ const App = () => {
           <Splash />
         </h1>
       </div>
-      <BrowserRouter>
-        <div className="navbar">
-          <Navbar />
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/About">
-            <div className="text">
-              <About />
-            </div>
-          </Route>
-          <Route path="/Vitae">
-            <div className="text">
-              <Vitae />
-            </div>
-          </Route>
-          <Route path="/Contact">
-            <div className="text">
-              <Contact />
-            </div>
-          </Route>
-        </div>
-      </BrowserRouter>
+      <div className="navStyle">
+        <Nav />
+      </div>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/About" component={About} />
+        <Route path="/Vitae" component={Vitae} />
+        <Route path="/Contact" component={Contact} />
+      </Switch>
       <div className="footer">
         <Social />
       </div>

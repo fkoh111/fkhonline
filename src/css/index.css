@@ -14,22 +14,15 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 li {
   float: left;
-}
-
-li a {
-  display: block;
   color: #93a1a1;
-  text-align: center;
   padding: 16px;
-  text-decoration: none;
 }
 
-.navbar {
+.navStyle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,18 +34,13 @@ li a {
   font-size: medium;
 }
 
-.text {
-  position: absolute;
-  top: 150px;
-  text-align: center;
-  font-size: small;
-}
-
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 40px;
   width: 100%;
-  text-align: center;
 }
 
 social {
