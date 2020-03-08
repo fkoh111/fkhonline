@@ -1,8 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Vitae extends Component {
-  render() {
-    return <p>Vitae</p>;
-  }
-}
+const Vitae = () => {
+  return <h1>Vitae</h1>;
+};
 export default Vitae;
