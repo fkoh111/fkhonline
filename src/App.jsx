@@ -5,6 +5,7 @@ import "./css/style.css";
 import Splash from "./components/Splash";
 import Social from "./components/Social";
 import Nav from "./components/Nav";
+import Wttr from "./components/Wttr";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -30,6 +31,7 @@ const App = () => {
       </Switch>
       <div className="footer">
         <Social />
+        <Wttr />
       </div>
     </React.Fragment>
   );
