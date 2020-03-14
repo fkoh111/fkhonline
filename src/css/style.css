@@ -54,8 +54,9 @@ a:hover {
 }
 
 .textStyle {
-  width: 65%;
+  max-width: 750px;
   margin: auto;
+  text-align: justify;
 }
 
 .splash {
