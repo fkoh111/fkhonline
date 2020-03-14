@@ -76,13 +76,10 @@ a:hover {
   text-align: center;
 }
 
-social {
+.social {
   margin: 20px;
-  color: #657b83;
 }
 
-.fa-github:hover,
-.fa-linkedin:hover,
-.fa-envelope:hover {
+.social:hover {
   color: rgb(190, 190, 190);
 }
