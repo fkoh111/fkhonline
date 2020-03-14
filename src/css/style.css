@@ -19,15 +19,34 @@ ul {
 
 li {
   float: left;
-  color: #859900;
   padding: 16px;
+  text-decoration: none;
+}
+
+h1 {
+  color: #b58900;
+}
+
+a {
+  color: #657b83;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
 }
 
 .navStyle {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #b58900;
+  text-decoration: none;
+}
+
+.navActive {
+  color: hotpink;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .textStyle {
@@ -60,5 +79,5 @@ social {
 .fa-github:hover,
 .fa-linkedin:hover,
 .fa-envelope:hover {
-  color: #859900;
+  color: hotpink;
 }
