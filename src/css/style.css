@@ -1,11 +1,13 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
+@import url("https://fonts.googleapis.com/css?family=Oxygen+Mono|Roboto+Mono&display=swap");
+
 body {
   color: #657b83;
-  background-color: #002b36;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif, monospace;
+  background-color: #001b22;
+  font-family: "Roboto Mono", "Oxygen Mono", -apple-system, BlinkMacSystemFont,
+    "Roboto", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-bottom: 120px;
@@ -23,7 +25,9 @@ li {
   text-decoration: none;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   color: #b58900;
 }
 
@@ -33,7 +37,7 @@ a {
 }
 
 a:hover {
-  color: hotpink;
+  color: rgb(190, 190, 190);
 }
 
 .navStyle {
@@ -44,20 +48,21 @@ a:hover {
 }
 
 .navActive {
-  color: hotpink;
+  color: rgb(222, 222, 222);
   font-weight: bold;
   text-decoration: underline;
 }
 
 .textStyle {
-  width: 70%;
+  max-width: 750px;
   margin: auto;
+  text-align: justify;
 }
 
 .splash {
   text-align: left;
   padding-left: 2%;
-  font-size: medium;
+  size: medium;
 }
 
 .footer {
@@ -67,7 +72,7 @@ a:hover {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #073642;
+  background-color: #00141a;
   text-align: center;
 }
 
@@ -79,5 +84,5 @@ social {
 .fa-github:hover,
 .fa-linkedin:hover,
 .fa-envelope:hover {
-  color: hotpink;
+  color: rgb(190, 190, 190);
 }

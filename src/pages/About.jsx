@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="textStyle">
       <div>
-        <h1>About</h1>
+        <h2>About</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
           imperdiet euismod imperdiet. Praesent congue, est eget commodo
