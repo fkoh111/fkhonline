@@ -1,8 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 body {
-  color: #93a1a1;
-  background-color: rgb(79, 79, 79);
+  color: #657b83;
+  background-color: #002b36;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif, monospace;
@@ -19,7 +19,7 @@ ul {
 
 li {
   float: left;
-  color: #93a1a1;
+  color: #859900;
   padding: 16px;
 }
 
@@ -42,22 +42,23 @@ li {
 }
 
 .footer {
+  border-top: 2px solid #b58900;
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: #073642;
   text-align: center;
 }
 
 social {
   margin: 20px;
-  color: #93a1a1;
+  color: #657b83;
 }
 
 .fa-github:hover,
 .fa-linkedin:hover,
 .fa-envelope:hover {
-  color: #b58900;
+  color: #859900;
 }
