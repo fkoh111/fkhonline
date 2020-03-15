@@ -30,8 +30,16 @@ const App = () => {
         <Route path="/Contact" component={Contact} />
       </Switch>
       <div className="footer">
-        <Social />
-        <Wttr />
+        <div id="container">
+          <div id="right">
+            <div className="widgetStyle">
+              <Wttr />
+            </div>
+          </div>
+          <div id="center">
+            <Social />
+          </div>
+        </div>
       </div>
     </React.Fragment>
   );
