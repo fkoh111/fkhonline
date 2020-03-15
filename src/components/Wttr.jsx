@@ -11,7 +11,7 @@ export default class Wttr extends React.Component {
 
   async componentDidMount() {
     try {
-      const proxy = "https://cors-anywhere.herokuapp.com/";
+      const proxy = "https://fkoh111cors.herokuapp.com/";
       const url = "http://wttr.in/Denmark?format=3&?m";
       const response = await fetch(proxy + url);
       if (!response.ok) {
