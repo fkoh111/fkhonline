@@ -1,6 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Oxygen+Mono|Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oxygen+Mono|Roboto+Mono|Cormorant+Garamond|EB+Garamond|Libre+Baskerville|Merriweather|Tinos&display=swap");
 
 body {
   color: #657b83;
@@ -31,6 +31,10 @@ h3 {
   color: #b58900;
 }
 
+h2 {
+  font-family: Cormorant Garamond;
+}
+
 a {
   color: #657b83;
   text-decoration: none;
@@ -50,7 +54,7 @@ a:hover {
 .navActive {
   color: rgb(222, 222, 222);
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .textStyle {
