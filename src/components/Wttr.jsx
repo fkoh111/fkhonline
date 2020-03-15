@@ -5,7 +5,7 @@ export default class Wttr extends React.Component {
     super();
     this.state = {
       fetching: true,
-      ip: null
+      text: null
     };
   }
 
@@ -23,7 +23,7 @@ export default class Wttr extends React.Component {
        * Do some testing of the returned result. Has to contain Denmark...
        */
 
-      this.setState({ ip: result, fetching: false });
+      this.setState({ text: result, fetching: false });
     } catch (err) {
       console.log(err);
     }
@@ -32,10 +32,10 @@ export default class Wttr extends React.Component {
   render() {
     return (
       <div>
-        {this.state.fetching || !this.state.ip ? (
+        {this.state.fetching || !this.state.text ? (
           <div>...</div>
         ) : (
-          <div>{this.state.ip}</div>
+          <div>{this.state.text}</div>
         )}
       </div>
     );
