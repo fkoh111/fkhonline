@@ -31,6 +31,7 @@ h3 {
   color: #b58900;
 }
 
+h1,
 h2 {
   font-family: "Cormorant Garamond";
 }
@@ -63,6 +64,17 @@ a:hover {
   margin: auto;
   text-align: justify;
   line-height: 2;
+}
+
+.static {
+  padding: 25px 25;
+  max-width: 750px;
+  max-height: 75px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 .splash {
