@@ -1,4 +1,5 @@
 import React from "react";
+import Profile from "../components/Profile";
 
 const About = () => {
   return (
@@ -144,6 +145,7 @@ const About = () => {
           est. Vestibulum quis augue commodo, sodales nunc nec, tristique
           ligula. Morbi porta dui pretium, vestibulum ex at, tincidunt urna.
         </p>
+        <Profile />
       </div>
     </div>
   );
