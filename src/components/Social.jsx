@@ -24,7 +24,7 @@ class Social extends Component {
           title="Mail | Frederik Kok Hansen"
           target="_parent"
         >
-          <i className="social fa fa-envelope fa-lg"></i>
+          <i className="social fa fa-paper-plane fa-lg"></i>
         </a>
       </div>
     );
