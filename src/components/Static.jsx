@@ -3,7 +3,7 @@ import React from "react";
 const Static = () => {
   return (
     <div>
-      <h1>fkhonline</h1>
+      <h2>fkhonline</h2>
     </div>
   );
 };

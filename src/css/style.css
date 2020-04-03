@@ -7,7 +7,7 @@ body {
   background-color: #001b22;
   font-family: "Roboto Mono", "Oxygen Mono", -apple-system, BlinkMacSystemFont,
     "Roboto", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif, monospace;
+    "Helvetica Neue", sans-serif, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-bottom: 120px;
@@ -69,11 +69,10 @@ a:hover {
 .static {
   padding: 25px 25;
   max-width: 750px;
-  max-height: 75px;
+  max-height: 65px;
   margin: auto;
   text-align: center;
   vertical-align: middle;
-  font-style: italic;
   letter-spacing: 1px;
 }
 
