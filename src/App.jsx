@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import "./css/style.css";
-import Static from "./components/Static";
+import Splash from "./components/Splash";
 import Social from "./components/Social";
 import Nav from "./components/Nav";
 import Wttr from "./components/Wttr";
@@ -15,9 +15,9 @@ import Contact from "./pages/Contact";
 const App = () => {
   return (
     <React.Fragment>
-      <div className="static">
+      <div className="banner">
         <h1>
-          <Static />
+          <Splash />
         </h1>
       </div>
       <div className="navStyle">
