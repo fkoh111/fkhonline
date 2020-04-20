@@ -3,12 +3,7 @@ import React from "react";
 const Static = () => {
   return (
     <div>
-      <h2>
-        FKH
-        <span>
-          <i>online</i>
-        </span>
-      </h2>
+      <h1>FKHONLINƎ</h1>
     </div>
   );
 };
