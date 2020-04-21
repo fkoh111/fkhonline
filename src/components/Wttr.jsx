@@ -5,7 +5,7 @@ export default class Wttr extends React.Component {
     super();
     this.state = {
       fetching: true,
-      text: null
+      text: null,
     };
   }
 
@@ -20,7 +20,7 @@ export default class Wttr extends React.Component {
       const result = await response.text();
 
       /**
-       * Do some testing of the returned result. Has to contain Denmark...
+       * Do some testing of the returned result.
        */
 
       this.setState({ text: result, fetching: false });
