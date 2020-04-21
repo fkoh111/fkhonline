@@ -3,21 +3,21 @@ import React, { Component } from "react";
 class Splash extends Component {
   constructor(props) {
     super(props);
-    this.state = { seconds: 0 };
+    this.state = { seconds: 0, twistedHeader: false };
   }
 
-  counter() {
+  twist() {
     this.setState((state) => ({
-      seconds: state.seconds + 1,
+      twistedHeader: Boolean(Math.random() >= 0.5),
     }));
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.counter(), 1000);
+    this.twist();
   }
 
   render() {
-    if (this.state.seconds <= 4) {
+    if (this.state.twistedHeader === true) {
       return (
         <div>
           <h1>FKHONLINƎ</h1>
