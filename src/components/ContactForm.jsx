@@ -7,6 +7,7 @@ const ContactForm = () => {
       firstName: "",
       lastName: "",
       email: "",
+      message: "",
     },
     onSubmit: (values) => {
       const envelope = JSON.stringify(values, null, 2);
@@ -20,6 +21,7 @@ const ContactForm = () => {
         id="firstName"
         name="firstName"
         type="text"
+        placeholder="First name"
         onChange={formik.handleChange}
         value={formik.values.firstName}
       />
@@ -29,6 +31,7 @@ const ContactForm = () => {
         id="lastName"
         name="lastName"
         type="text"
+        placeholder="Last name"
         onChange={formik.handleChange}
         value={formik.values.lastName}
       />
@@ -38,8 +41,18 @@ const ContactForm = () => {
         id="email"
         name="email"
         type="email"
+        placeholder="E-mail Address"
         onChange={formik.handleChange}
         value={formik.values.email}
+      />
+
+      <label htmlFor="message">Message</label>
+      <input
+        id="message"
+        name="message"
+        type="text"
+        onChange={formik.handleChange}
+        value={formik.values.message}
       />
 
       <button type="submit">Submit</button>
