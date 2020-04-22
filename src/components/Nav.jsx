@@ -24,6 +24,11 @@ const Nav = () => {
           Contact
         </NavLink>
       </li>
+      <li>
+        <NavLink activeClassName="navActive" to="/ContactForm">
+          ContactForm
+        </NavLink>
+      </li>
     </ul>
   );
 };
