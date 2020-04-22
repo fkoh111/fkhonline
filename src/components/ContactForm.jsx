@@ -1,49 +1,42 @@
 import React from "react";
-import { useFormik } from "formik";
+import { Formik, Field, Form } from "formik";
 
 const ContactForm = () => {
-  const formik = useFormik({
-    initialValues: {
-      firstName: "",
-      lastName: "",
-      email: "",
-    },
-    onSubmit: (values) => {
-      const envelope = JSON.stringify(values, null, 2);
-      console.log(envelope);
-    },
-  });
   return (
-    <form onSubmit={formik.handleSubmit}>
-      <label htmlFor="firstName">First Name</label>
-      <input
-        id="firstName"
-        name="firstName"
-        type="text"
-        onChange={formik.handleChange}
-        value={formik.values.firstName}
-      />
-
-      <label htmlFor="lastName">Last Name</label>
-      <input
-        id="lastName"
-        name="lastName"
-        type="text"
-        onChange={formik.handleChange}
-        value={formik.values.lastName}
-      />
-
-      <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        onChange={formik.handleChange}
-        value={formik.values.email}
-      />
-
-      <button type="submit">Submit</button>
-    </form>
+    <Formik
+      initialValues={{ firstName: "", lastName: "", email: "", message: "" }}
+      onSubmit={(values) => {
+        const payload = JSON.stringify(values, null, 2);
+        console.log(payload);
+      }}
+    >
+      <Form>
+        <div>
+          <label htmlFor="firstName">First Name</label>
+          <Field name="firstName" type="text" placeholder="First name" />
+        </div>
+        <div>
+          <label htmlFor="lastName">Last Name</label>
+          <Field name="lastName" type="text" placeholder="Last name" />
+        </div>
+        <div>
+          <label htmlFor="email">Email Address</label>
+          <Field name="email" type="email" placeholder="Email address" />
+        </div>
+        <label htmlFor="message">Message</label>
+        <div>
+          <Field
+            name="message"
+            component="textarea"
+            placeholder="Post a message.."
+            rows={10}
+            cols={100}
+          />
+        </div>
+        <button type="submit">Post</button>
+      </Form>
+    </Formik>
   );
 };
+
 export default ContactForm;
