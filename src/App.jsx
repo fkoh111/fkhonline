@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Vitae from "./pages/Vitae";
 import Contact from "./pages/Contact";
-import ContactForm from "./pages/ContactForm";
+import ContactForm from "./components/ContactForm";
 
 const App = () => {
   return (
