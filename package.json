@@ -36,6 +36,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/compat-data": "~7.8.0",
     "@babel/helper-call-delegate": "^7.8.7"
+  },
+  "resolutions": {
+    "@babel/preset-env": "^7.8.7"
   }
 }
