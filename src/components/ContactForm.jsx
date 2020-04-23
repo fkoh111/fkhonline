@@ -31,7 +31,6 @@ const ContactForm = () => {
             component="textarea"
             placeholder="Message..."
             rows={10}
-            cols={120}
           />
         </div>
         <button className="buttonStyle" type="submit">
