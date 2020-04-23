@@ -3,7 +3,9 @@ import React from "react";
 import { Formik, Field, Form } from "formik";
 
 /**
- * On the pattern, see: https://github.com/jaredpalmer/formik/issues/1420
+ * On the pattern, see:
+ *     - https://jaredpalmer.com/formik/docs/api/formik#initialvalues-values
+ *     - https://github.com/jaredpalmer/formik/issues/1420
  */
 
 const ContactForm = () => {
