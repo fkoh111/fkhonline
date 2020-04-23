@@ -132,8 +132,9 @@ a:hover {
 .contactLayout {
   color: navy;
   line-height: 1.5em;
-  text-align: center;
   font-size: small;
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -168,6 +169,11 @@ textarea {
 
 .buttonStyle:hover {
   background-color: darkorange;
+}
+
+.errStyle {
+  float: right;
+  color: red;
 }
 
 .boxProfile {
