@@ -1,3 +1,7 @@
+/*
+  Consider to clean up, utilizie some CSS inheritance etc. etc. 
+*/
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 @import url("https://fonts.googleapis.com/css?family=Oxygen+Mono|Roboto+Mono|Cormorant+Garamond|EB+Garamond|Libre+Baskerville|Merriweather|Tinos&display=swap");
@@ -54,7 +58,7 @@ a {
 }
 
 a:hover {
-  color: blue;
+  color: darkorange;
 }
 
 .navStyle {
@@ -103,6 +107,10 @@ a:hover {
   color: navy;
 }
 
+.social:hover {
+  color: darkorange;
+}
+
 .widgetStyle {
   font-size: small;
 }
@@ -122,6 +130,7 @@ a:hover {
 }
 
 .contactLayout {
+  color: navy;
   line-height: 1.5em;
   text-align: center;
   font-size: small;
@@ -154,6 +163,11 @@ textarea {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  outline: none;
+}
+
+.buttonStyle:hover {
+  background-color: darkorange;
 }
 
 .boxProfile {
