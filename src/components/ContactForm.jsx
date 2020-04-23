@@ -29,12 +29,14 @@ const ContactForm = () => {
           <Field
             name="message"
             component="textarea"
-            placeholder="Post a message..."
+            placeholder="Message..."
             rows={10}
             cols={120}
           />
         </div>
-        <button type="submit">Send</button>
+        <button className="buttonStyle" type="submit">
+          Send
+        </button>
       </Form>
     </Formik>
   );
