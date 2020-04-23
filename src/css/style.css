@@ -58,7 +58,7 @@ a {
 }
 
 a:hover {
-  color: orange;
+  color: darkorange;
 }
 
 .navStyle {
@@ -108,7 +108,7 @@ a:hover {
 }
 
 .social:hover {
-  color: orange;
+  color: darkorange;
 }
 
 .widgetStyle {
@@ -167,7 +167,7 @@ textarea {
 }
 
 .buttonStyle:hover {
-  background-color: orange;
+  background-color: darkorange;
 }
 
 .boxProfile {
