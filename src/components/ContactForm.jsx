@@ -9,10 +9,11 @@ import { Formik, Field, Form } from "formik";
 const ContactForm = () => {
   return (
     <Formik
-      initialValues={{ Name: "", email: "", message: "" }}
-      onSubmit={(values) => {
+      initialValues={{ name: "", email: "", message: "" }}
+      onSubmit={(values, { resetForm }) => {
         const payload = JSON.stringify(values, null, 2);
         console.log(payload);
+        resetForm({ values: "" });
       }}
     >
       <Form>
