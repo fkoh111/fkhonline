@@ -1,10 +1,15 @@
 import React from "react";
+
 import { Formik, Field, Form } from "formik";
+
+/**
+ * On the pattern, see: https://github.com/jaredpalmer/formik/issues/1420
+ */
 
 const ContactForm = () => {
   return (
     <Formik
-      initialValues={{ firstName: "", lastName: "", email: "", message: "" }}
+      initialValues={{ Name: "", email: "", message: "" }}
       onSubmit={(values) => {
         const payload = JSON.stringify(values, null, 2);
         console.log(payload);
@@ -12,28 +17,24 @@ const ContactForm = () => {
     >
       <Form>
         <div>
-          <label htmlFor="firstName">First Name</label>
-          <Field name="firstName" type="text" placeholder="First name" />
+          <label htmlFor="name">Name: </label> <div></div>
+          <Field name="name" type="text" placeholder="Name" />
         </div>
         <div>
-          <label htmlFor="lastName">Last Name</label>
-          <Field name="lastName" type="text" placeholder="Last name" />
+          <label htmlFor="email">Email: </label> <div></div>
+          <Field name="email" type="email" placeholder="Email" />
         </div>
-        <div>
-          <label htmlFor="email">Email Address</label>
-          <Field name="email" type="email" placeholder="Email address" />
-        </div>
-        <label htmlFor="message">Message</label>
+        <p></p>
         <div>
           <Field
             name="message"
             component="textarea"
-            placeholder="Post a message.."
+            placeholder="Post a message..."
             rows={10}
-            cols={100}
+            cols={120}
           />
         </div>
-        <button type="submit">Post</button>
+        <button type="submit">Send</button>
       </Form>
     </Formik>
   );

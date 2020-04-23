@@ -129,6 +129,20 @@ a:hover {
   color: navy;
 }
 
+.contactLayout {
+  line-height: 1.5em;
+  text-align: center;
+  font-size: small;
+}
+
+input {
+  width: 25%;
+}
+
+textarea {
+  resize: none;
+}
+
 .roundProfile {
   border-radius: 50%;
   width: 50%;
