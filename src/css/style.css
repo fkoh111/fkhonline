@@ -88,7 +88,7 @@ a:hover {
 }
 
 .footer {
-  border-top: 5px solid navy;
+  border-top: 3px solid navy;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -119,6 +119,41 @@ a:hover {
 #center {
   margin: 0 auto;
   width: 200px;
+}
+
+.contactLayout {
+  line-height: 1.5em;
+  text-align: center;
+  font-size: small;
+}
+
+input {
+  width: 25%;
+  outline: none;
+  border: 1px solid navy;
+  width: 200px;
+  height: 15px;
+  padding: 3px;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  border: 1px solid navy;
+  width: 500px;
+  padding: 3px;
+}
+
+.buttonStyle {
+  font-family: "Roboto Mono", "Helvetica";
+  background-color: navy;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
 }
 
 .boxProfile {

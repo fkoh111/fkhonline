@@ -5,7 +5,11 @@ const Contact = () => {
   return (
     <div className="textStyle">
       <h2>Contact</h2>
-      <ContactForm />
+      <div className="contactLayout">
+        <div>
+          <ContactForm />
+        </div>
+      </div>
     </div>
   );
 };
