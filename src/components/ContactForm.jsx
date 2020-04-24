@@ -10,7 +10,7 @@ import * as Yup from "yup";
  */
 
 const ContactSchema = Yup.object().shape({
-  name: Yup.string().min(2, "Too Short!").max(50, "Too Long!"),
+  name: Yup.string().min(2, "Too short!").max(50, "Too long!"),
   email: Yup.string().email("Invalid email!"),
   message: Yup.string()
     .min(20, "Message too short!")
