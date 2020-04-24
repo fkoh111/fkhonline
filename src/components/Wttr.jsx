@@ -29,6 +29,8 @@ export default class Wttr extends React.Component {
        */
       this.setState({ text: result, fetching: false });
 
+      console.log(this.state);
+
       if (result.includes("Unknown")) {
         this.setState({ text: ":-(", fetching: false });
       }
