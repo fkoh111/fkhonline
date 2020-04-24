@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * It's a hacked solution, I know!
+ */
+
 export default class Wttr extends React.Component {
   constructor() {
     super();
@@ -20,10 +24,16 @@ export default class Wttr extends React.Component {
       const result = await response.text();
 
       /**
-       * Do some testing of the returned result.
+       * We're overwriting state if the service returns something unknown, e.g.:
+       * Unknown location; please try ~55.670249,10.3333283
        */
-
       this.setState({ text: result, fetching: false });
+
+      console.log(this.state);
+
+      if (result.includes("Unknown")) {
+        this.setState({ text: ":-(", fetching: false });
+      }
     } catch (err) {
       console.log(err);
     }
