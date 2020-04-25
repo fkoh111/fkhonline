@@ -1,7 +1,8 @@
 import React from "react";
-
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
+
+import postHandler from "../helpers/utils";
 
 /**
  * On the pattern, see:
@@ -9,23 +10,23 @@ import * as Yup from "yup";
  *     - https://github.com/jaredpalmer/formik/issues/1420
  */
 
-const ContactSchema = Yup.object().shape({
-  name: Yup.string().min(2, "Too short!").max(50, "Too long!").required(),
-  email: Yup.string().email("Invalid email!").required(),
-  message: Yup.string()
-    .min(20, "Message too short!")
-    .max(500, "Message too long!")
-    .required(),
-});
-
 const ContactForm = () => {
+  const ContactSchema = Yup.object().shape({
+    name: Yup.string().min(2, "Too short!").max(50, "Too long!").required(),
+    email: Yup.string().email("Invalid email!").required(),
+    message: Yup.string()
+      .min(20, "Message too short!")
+      .max(500, "Message too long!")
+      .required(),
+  });
+
   return (
     <Formik
       initialValues={{ name: "", email: "", message: "" }}
       validationSchema={ContactSchema}
       onSubmit={(values, { resetForm }) => {
-        const payload = JSON.stringify(values, null, 2);
-        console.log(payload);
+        const payload = values;
+        postHandler(payload);
         resetForm({ values: "" });
       }}
     >
