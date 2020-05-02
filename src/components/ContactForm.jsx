@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 
-import postHandler from "../helpers/utils";
+import { postHandler } from "../helpers/utils";
 
 /**
  * On the pattern, see:

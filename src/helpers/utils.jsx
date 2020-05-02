@@ -1,17 +1,23 @@
 /**
- * Catch errors and all that jazz. Pass proper messages from the backend
+ * statusHandler takes a successful json result and handles the UI according to
+ * the values
+ *
+ * @param {*} response
  */
 
+const statusHandler = (response) => {
+  console.log(response.status);
+};
+
 /**
- * postHandler takes an initialValues object from Formik, gives it a timestamp,
- * and posts it to the passed endpoint
+ * postHandler takes an initialValues object from Formik and posts it to the
+ * passed endpoint
  *
  * @param {*} data initialValues object from Formik, see the Formik API: https://jaredpalmer.com/formik/docs/api/formik#initialvalues-values
  * @param {*} endpoint endpoint you want to post to
  */
-const postHandler = async (data, endpoint) => {
+export const postHandler = async (data, endpoint) => {
   try {
-    data.timestamp = Date.now();
     const payload = JSON.stringify(data);
     const response = await fetch(endpoint, {
       method: "POST",
@@ -23,7 +29,7 @@ const postHandler = async (data, endpoint) => {
     });
     if (response.ok) {
       const result = await response.json();
-      console.log(result);
+      statusHandler(result);
       return result;
     }
     if (!response.ok) {
@@ -33,5 +39,3 @@ const postHandler = async (data, endpoint) => {
     throw new Error(err);
   }
 };
-
-export default postHandler;
