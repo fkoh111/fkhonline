@@ -27,7 +27,10 @@ const ContactForm = () => {
       onSubmit={(values, { resetForm }) => {
         console.log(typeof values);
         const payload = values;
-        postHandler(payload, `http://localhost:5000/api/form/contact`);
+        postHandler(
+          payload,
+          `https://fkhonlineapi.azurewebsites.net/api/contact/form`
+        );
         resetForm({ values: "" });
       }}
     >

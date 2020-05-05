@@ -2,6 +2,8 @@
  * statusHandler takes a successful json result and handles the UI according to
  * the values
  *
+ * TODO: https://hackernoon.com/create-react-modal-using-reactjs-popup-m24m231v1
+ *
  * @param {*} response
  */
 
