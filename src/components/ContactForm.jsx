@@ -56,7 +56,7 @@ const ContactForm = () => {
             <label htmlFor="message">Message: </label> <div></div>
             <Field
               name="message"
-              component="textArea"
+              component="textarea"
               placeholder="Message..."
               rows={10}
               cols={135}
