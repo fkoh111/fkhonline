@@ -25,7 +25,6 @@ const ContactForm = () => {
       initialValues={{ name: "", email: "", message: "" }}
       validationSchema={ContactSchema}
       onSubmit={(values, { resetForm }) => {
-        console.log(typeof values);
         const payload = values;
         postHandler(
           payload,
