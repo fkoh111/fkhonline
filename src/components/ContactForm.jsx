@@ -56,7 +56,7 @@ const ContactForm = () => {
               component="textarea"
               placeholder="Message..."
               rows={10}
-              cols={100}
+              cols={135}
             />
             <div></div>
             {errors.message && touched.message ? (
