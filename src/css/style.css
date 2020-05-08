@@ -132,7 +132,7 @@ a:hover {
 
 .contactLayout {
   color: navy;
-  line-height: 1.5em;
+  line-height: 2em;
   font-size: small;
   justify-content: center;
   position: absolute;
@@ -148,7 +148,7 @@ input {
   padding: 3px;
 }
 
-textarea {
+textArea {
   resize: none;
   outline: none;
   border: 1px solid navy;
@@ -165,6 +165,7 @@ textarea {
   border: none;
   color: white;
   padding: 10px 25px;
+  margin-top: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -177,7 +178,6 @@ textarea {
 }
 
 .errStyle {
-  float: right;
   color: red;
 }
 

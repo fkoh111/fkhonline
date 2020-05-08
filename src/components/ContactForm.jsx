@@ -12,12 +12,15 @@ import { postHandler } from "../helpers/utils";
 
 const ContactForm = () => {
   const ContactSchema = Yup.object().shape({
-    name: Yup.string().min(2, "Too short!").max(50, "Too long!").required(),
-    email: Yup.string().email("Invalid email!").required(),
+    name: Yup.string()
+      .min(2, "Too short!")
+      .max(50, "Too long!")
+      .required("Name is required!"),
+    email: Yup.string().email("Invalid email!").required("Email is required!"),
     message: Yup.string()
       .min(20, "Message too short!")
       .max(500, "Message too long!")
-      .required(),
+      .required("Message is required!"),
   });
 
   return (
@@ -49,16 +52,15 @@ const ContactForm = () => {
               <div className="errStyle">{errors.email}</div>
             ) : null}
           </div>
-          <p></p>
           <div>
+            <label htmlFor="message">Message: </label> <div></div>
             <Field
               name="message"
-              component="textarea"
+              component="textArea"
               placeholder="Message..."
               rows={10}
               cols={135}
             />
-            <div></div>
             {errors.message && touched.message ? (
               <div className="errStyle">{errors.message}</div>
             ) : null}
