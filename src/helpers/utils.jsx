@@ -1,3 +1,8 @@
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+toast.configure();
+
 /**
  * statusHandler takes a successful json result and handles the UI according to
  * the values
@@ -9,6 +14,19 @@
 
 const statusHandler = (response) => {
   console.log(response.status);
+  if (response.status === "success") {
+    toast.info("Your message has successfully been sent! 📫", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  } else {
+    return null;
+  }
 };
 
 /**
@@ -32,7 +50,6 @@ export const postHandler = async (data, endpoint) => {
     if (response.ok) {
       const result = await response.json();
       statusHandler(result);
-      return result;
     }
     if (!response.ok) {
       throw new Error("An error occured");
