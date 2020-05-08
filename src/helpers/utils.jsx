@@ -1,14 +1,18 @@
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 /**
- * statusHandler takes a successful json result and handles the UI according to
- * the values
+ * statusHandler responds with an appropriate toast giving the response from the api
  *
- * TODO: https://hackernoon.com/create-react-modal-using-reactjs-popup-m24m231v1
+ * TODO: Handle error responses and everything in between as well.
  *
  * @param {*} response
  */
 
 const statusHandler = (response) => {
-  console.log(response.status);
+  if (response.status === "success") {
+    toast("Your message has successfully been sent! 📫");
+  }
 };
 
 /**
@@ -32,7 +36,6 @@ export const postHandler = async (data, endpoint) => {
     if (response.ok) {
       const result = await response.json();
       statusHandler(result);
-      return result;
     }
     if (!response.ok) {
       throw new Error("An error occured");
