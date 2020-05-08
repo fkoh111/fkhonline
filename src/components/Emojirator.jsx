@@ -2,6 +2,8 @@ import React from "react";
 
 /**
  * EXPERIMENTAL
+ *
+ * https://emojipedia.org/face-with-rolling-eyes/
  */
 
 export default class Emojirator extends React.Component {
