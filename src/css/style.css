@@ -195,3 +195,9 @@ textarea {
   border: solid 3px;
   color: navy;
 }
+
+.Toastify__toast-body {
+  font-family: "Roboto Mono";
+  background-color: white;
+  color: #566970;
+}

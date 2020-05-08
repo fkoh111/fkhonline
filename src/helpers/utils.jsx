@@ -1,31 +1,17 @@
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-toast.configure();
-
 /**
- * statusHandler takes a successful json result and handles the UI according to
- * the values
+ * statusHandler responds with an appropriate toast giving the response from the api
  *
- * TODO: https://hackernoon.com/create-react-modal-using-reactjs-popup-m24m231v1
+ * TODO: Handle error responses and everything in between as well.
  *
  * @param {*} response
  */
 
 const statusHandler = (response) => {
-  console.log(response.status);
   if (response.status === "success") {
-    toast.info("Your message has successfully been sent! 📫", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-  } else {
-    return null;
+    toast("Your message has successfully been sent! 📫");
   }
 };
 
