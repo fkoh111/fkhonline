@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import { toast } from "react-toastify";
 
 import "./css/style.css";
 import Splash from "./components/Splash";
@@ -12,6 +13,16 @@ import About from "./pages/About";
 import Vitae from "./pages/Vitae";
 import Contact from "./pages/Contact";
 import ContactForm from "./components/ContactForm";
+
+toast.configure({
+  position: "top-right",
+  autoClose: 7500,
+  hideProgressBar: true,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+});
 
 const App = () => {
   return (
