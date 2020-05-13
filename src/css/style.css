@@ -146,6 +146,8 @@ input {
   width: 200px;
   height: 15px;
   padding: 3px;
+  font-family: "Roboto Mono", "Helvetica";
+  font-size: small;
 }
 
 textArea {
@@ -156,7 +158,10 @@ textArea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 91%;
+  width: 90%;
+  max-width: 850px;
+  font-family: "Roboto Mono", "Helvetica";
+  font-size: small;
 }
 
 .buttonStyle {
