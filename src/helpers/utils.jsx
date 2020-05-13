@@ -4,8 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 /**
  * statusHandler responds with an appropriate toast giving the response from the api
  *
- * TODO: Handle error responses and everything in between as well.
- *
  * @param {*} response
  */
 
