@@ -11,10 +11,10 @@ import "react-toastify/dist/ReactToastify.css";
 
 const statusHandler = (response) => {
   try {
-    if (response.status === "error") {
+    if (response.status === "success") {
       toast("Your message has successfully been sent! 📫");
     }
-    if (response.status === "success") {
+    if (response.status === "error") {
       toast("We experienced a problem, please try again! 😰🥵");
     }
   } catch (err) {
