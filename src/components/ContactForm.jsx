@@ -29,10 +29,7 @@ const ContactForm = () => {
       validationSchema={ContactSchema}
       onSubmit={(values, { resetForm }) => {
         const payload = values;
-        postHandler(
-          payload,
-          `https://fkhonlineapi.azurewebsites.net/api/contact/form`
-        );
+        postHandler(payload, `https://api.fkhonline.net/api/contact/form`);
         resetForm({ values: "" });
       }}
     >
