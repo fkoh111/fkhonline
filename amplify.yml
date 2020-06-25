@@ -20,6 +20,9 @@ test:
       commands:
         - yarn test
   artifacts:
+    baseDirectory: build
     files:
       - "**/*"
-    baseDirectory: build
+  cache:
+    paths:
+      - node_modules/**/*
