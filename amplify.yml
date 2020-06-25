@@ -14,15 +14,3 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-test:
-  phases:
-    test:
-      commands:
-        - yarn test
-  artifacts:
-    baseDirectory: build
-    files:
-      - "**/*"
-  cache:
-    paths:
-      - node_modules/**/*
